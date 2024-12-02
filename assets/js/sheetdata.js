@@ -19,9 +19,9 @@ async function fetchGoogleSheetData() { //Defines an asynchronous function named
       html += '</table>'; //Adds a closing </table> tag to finish the HTML table.
   
       // Insert into the HTML div
-      document.getElementById('sheetData').innerHTML = html; //Selects the HTML element with the id sheetData and inserts the generated HTML table into it, displaying the table of data on the webpage.
+      document.getElementById('sheet-data').innerHTML = html; //Selects the HTML element with the id sheetData and inserts the generated HTML table into it, displaying the table of data on the webpage.
     } catch (error) { //Catches any errors that occur during the try block (e.g., if the fetch request fails).
-      document.getElementById('sheetData').innerText = 'Failed to load data'; //If an error occurs, it sets the inner text of the sheetData element to show a message indicating that the data failed to load.
+      document.getElementById('sheet-data').innerText = 'Failed to load data'; //If an error occurs, it sets the inner text of the sheetData element to show a message indicating that the data failed to load.
       console.error('Error fetching the data:', error); //Logs the error to the browser’s console, providing more details about what went wrong.
     }
   }
