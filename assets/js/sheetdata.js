@@ -1,6 +1,6 @@
 // Function to fetch and display Google Sheets data
 async function fetchGoogleSheetData() {
-    const url = 'https://docs.google.com/spreadsheets/d/e/YOUR_SPREADSHEET_ID/pub?output=csv';
+    const url = 'https://docs.google.com/spreadsheets/d/1aNNnQ4g5gLy_Eoyclvmw3l-kwzppg_uYgNbBNXWXNrQ/edit?gid=233518721#gid=233518721';
   
     try {
       const response = await fetch(url);
